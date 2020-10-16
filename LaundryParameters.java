@@ -3,7 +3,7 @@ package pl.edu.pw.ii.jee.ppj.tarkowski;
 public abstract class LaundryParameters {
 	
 	/**
-	* definicja numeru programu
+	* program number definition
 	*/
 	protected int number;
 
@@ -14,7 +14,7 @@ public abstract class LaundryParameters {
 	protected abstract void setNumber(int number);
 	
 	/**
-	* definicja temperatury programu
+	* program temperature definition
 	*/
 	
 	protected int temp;
@@ -27,7 +27,7 @@ public abstract class LaundryParameters {
 	
 	
 	/**
-	* definicja obrotów programu
+	* program rotation definition
 	*/
 	
 	protected int rpm;
@@ -39,7 +39,7 @@ public abstract class LaundryParameters {
 	protected abstract void setRpm(int rpm);
 	
 	/**
-	* definicja czasu programu
+	* program duration definition
 	*/
 	
 	protected int duration;

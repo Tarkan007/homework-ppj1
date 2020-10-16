@@ -13,25 +13,41 @@ public class Laundry extends LaundryParameters implements WashingMachine {
 	}
 	
 /*
- * Podstawiacz numeru programu
+ * Program number setter
  */
 	
 	public void setNumber(int number) {
 	this.number = number;
 	}
+
+	/*
+	 * Laundry temperature setter
+	 */
 	
 	public void setTemp(int temp) {
 		this.temp = temp;
 	}
+
+	/*
+	 * Laundry duration setter
+	 */
 	
 	public void setDuration(int duration) {
 		this.duration = duration;
 	}
 	
+	/*
+	 * Laundry rotation per minute setter
+	 */
+	
 	public void setRpm(int rpm) {
 		this.rpm = rpm;
 	}
 
+	/*
+	 * method putting actual values, dependent on setNumber method passing laundry program number 
+	 */
+	
 	public void program() {
 		if (number==1) {
 			setTemp(50);
@@ -50,6 +66,10 @@ public class Laundry extends LaundryParameters implements WashingMachine {
 			setDuration(50);
 			setRpm(500);
 		}
+		
+		/*
+		 * Wrong number communicate
+		 */
 		
 		else  {
 		System.out.println("Wybra³eœ niew³aœciwy numer");

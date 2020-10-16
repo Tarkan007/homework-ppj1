@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class StartLaundryApp {
 
+	/*
+	 * In main method the user chooses the laundry program
+	 */
+	
 	public static void main(String[] args) {
 		
 		System.out.println("Proszê wpisaæ numer:");
@@ -15,8 +19,16 @@ public class StartLaundryApp {
 		int programik;
 		programik = scan.nextInt();
 
+		/*
+		 * Instantiating
+		 */
+		
 		Laundry pranie = new Laundry(programik);
 		pranie.setNumber(programik);
+		
+		/*
+		 * Final result, implementing interface, abstract class and inherited methods
+		 */
 		
 		System.out.println("Temperatura prania to: " + pranie.getTemp() + ", czas prania to: " + pranie.getDuration() +  ", obroty na minutê: " + pranie.getRpm());
 		scan.close();
